@@ -1,4 +1,5 @@
-# Проект "Smart_Fluffy_Brick"
+# Tis is just personal copy of DanikNik/ASSISTANT1 repo
+## Проект "Smart_Fluffy_Brick"
 
 #### Конечный продукт представляет из себя:
 
