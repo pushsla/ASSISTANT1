@@ -1,0 +1,41 @@
++---------+
+|SERACHING|
++---------+
+
+wikipedia api:1)
+https://ru.wikipedia.org/w/api.php?action=opensearch&search=<Искомое>&format=xml
+Искать по "<Description>"
+
+wikipwedia api:2)
+https://ru.wikipedia.org/w/api.php?action=opensearch&search=<Искомое>&format=json
+Дальше расшифровываем -- var = json.loads(<наша строка>)
+Потом ищем var[2]
+Если нифига -- просим уточнить поиск...
+
+!!!Альтернатива:
+
+duckduckgo api)
+https://duckduckgo.com/?q=<Искомое>&ia=about&format=json
+Стандарнтая-расшфровка...
+ищем var['Abstract']
+Стандартные-действия-при-"нифига"...
+
+========================================================================================
+
++-------+
+|WEATHER|
++-------+
+
+requests.get('http://www.realmeteo.ru/<Город>/1/current')
+Темпетатура воздуха:
+ soup.findAll('td', {'class':'meteodata','id':'col1'})
+Скорость ветра:
+ soup.findAll('td', {'class':'meteodata','colspan':'2'})
+ИЛИ
+ soup.findAll('td', {'class':'meteodata'})[<Нечто>]
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+END.

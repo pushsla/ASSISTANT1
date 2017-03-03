@@ -1,0 +1,28 @@
+
+    message ConnectionRequest
+    {
+    optional int32 protocolVersion = 1;
+  
+    required string speechkitVersion = "";
+            
+    required string serviceName = "asr_dictation";
+
+    required string uuid = "34353bf726ff4ea885eea4164d3ab413";
+            
+    required string apiKey = "f1233cf8-c27a-4bad-9b5e-04f6ed2f265a";
+            
+    required string applicationName = "SmartBrick";
+            
+    required string device = "Intel_Galileo";
+          
+    required string coords = "0,0";
+            
+    required string topic = "notes";
+          
+    required string lang = "ru-RU";
+            
+    required string format = "audio/x-pcm;bit=16;rate=16000";
+            
+    optional bool punctuation = true;
+            
+    }
